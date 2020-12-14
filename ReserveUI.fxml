@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="145.0" fitWidth="212.0" layoutX="46.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/download.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="46.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Type: Nessan" />
+            <Text layoutX="46.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Car Model: 2008" />
+            <Text layoutX="46.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent price: 19.99$/day">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="46.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color: Brown" />
+            <Text layoutX="46.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passengers: 4" />
+            <Text layoutX="46.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gear Type: Automatic" />
+            <DatePicker layoutX="396.0" layoutY="120.0" mouseTransparent="true" promptText="Recieve Date" />
+            <DatePicker layoutX="396.0" layoutY="164.0" promptText="Return Date" />
+            <Button layoutX="435.0" layoutY="331.0" mnemonicParsing="false" text="Reserve the car" />
+            <CheckBox layoutX="353.0" layoutY="301.0" mnemonicParsing="false" text="I want to cancel my reservation at any time (extra fees)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </CheckBox>
+            <ChoiceBox fx:id="choice2" layoutX="396.0" layoutY="263.0" prefHeight="26.0" prefWidth="174.0" />
+            <ChoiceBox fx:id="choice1" layoutX="395.0" layoutY="211.0" prefHeight="26.0" prefWidth="174.0" />
+            <Text fill="#ff4e13" layoutX="320.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Complete Your Reservation!">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

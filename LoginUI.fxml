@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="loginBt" layoutX="112.0" layoutY="229.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="115.0" text="Log-In" />
+            <ImageView fitHeight="213.0" fitWidth="290.0" layoutX="320.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@10best-cars-group-cropped-1542126037.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="26.0" layoutY="152.0" text="Password" />
+            <Label layoutX="34.0" layoutY="112.0" text="E-Mail" />
+            <TextField fx:id="idtxt" layoutX="95.0" layoutY="108.0" />
+            <Label layoutX="67.0" layoutY="312.0" text="Don't have account?">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerBt" layoutX="170.0" layoutY="310.0" mnemonicParsing="false" onAction="#goToRegister" prefHeight="15.0" prefWidth="127.0" text="Register Now!">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Label fx:id="label" layoutX="26.0" layoutY="34.0" prefHeight="46.0" prefWidth="276.0" text=" Rent Your Car Now!" textAlignment="CENTER" textFill="#2519a7">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passtxt" layoutX="96.0" layoutY="148.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

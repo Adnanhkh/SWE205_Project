@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="369.0" layoutY="37.0" text="Sign Up" textFill="#ff1111">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="369.0" layoutY="77.0" text="Welcome to join us" textFill="#3f1cbd" />
+            <TextField fx:id="nametxt" layoutX="369.0" layoutY="121.0" prefHeight="26.0" prefWidth="214.0" promptText="First Name" />
+            <PasswordField fx:id="passtxt" layoutX="369.0" layoutY="233.0" prefHeight="26.0" prefWidth="214.0" promptText="Password" />
+            <TextField fx:id="emailtxt" layoutX="369.0" layoutY="197.0" prefHeight="26.0" prefWidth="214.0" promptText="E-Mail" />
+            <TextField fx:id="idtxt" layoutX="369.0" layoutY="160.0" prefHeight="26.0" prefWidth="214.0" promptText="National ID" />
+            <Button fx:id="registerBt" layoutX="399.0" layoutY="296.0" mnemonicParsing="false" onAction="#register" prefHeight="26.0" prefWidth="153.0" text="Register Now!" />
+            <ImageView fitHeight="170.0" fitWidth="175.0" layoutX="86.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@luxury-cars-logo_20448-238.jpg" />
+               </image>
+            </ImageView>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
